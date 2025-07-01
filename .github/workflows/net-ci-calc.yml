@@ -1,0 +1,14 @@
+name: CI usando workflow reutilizable
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ci:
+    uses: virtualitosorg/-org-reusable-workflows/.github/workflows/dotnet-reusable.yml@main
+    with:
+      project-path: calculadora.csproj
+      run-app: "false"
