@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    uses: virtualitosorg/-org-reusable-workflows/.github/workflows/dotnet-reusable.yml@main
+    uses: virtualitosorg/-org-reusable-workflows/.github/workflows/net-ci.yml@main
     with:
       project-path: calculadora.csproj
       run-app: "false"
