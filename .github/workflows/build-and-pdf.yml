@@ -1,8 +1,7 @@
 name: Build and PDF
 
 on:
-  push:
-    branches: [prueba]
+  workflow_dispatch:
 
 jobs:
   build-and-test:
